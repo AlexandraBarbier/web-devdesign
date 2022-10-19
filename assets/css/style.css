@@ -596,6 +596,14 @@ section.footer-container {
   transform: scaleY(1);
 }
 
+/* .img-animation {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.img-animation.is-inview {
+  transform: scaleX(1);
+} */
 .header-services p,
 .header-services h2 {
   margin: 0px;
