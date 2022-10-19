@@ -135,6 +135,7 @@ ol {
   height: 75px;
   background-color: #f1f1f1;
   display: flex;
+  z-index: 10;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
