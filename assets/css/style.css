@@ -147,19 +147,23 @@ ol {
 
 /* ---- menu clickable text in header */
 
-.menu {
+.menu,
+.hover--link {
   position: relative;
 }
-.menu span {
+.menu span,
+.hover--link span {
   color: var(--black);
-  font-size: 20;
+  font-size: 15px;
   transition: 0.5s;
-  font-weight: 100;
+  font-weight: 400;
   will-change: transform;
   display: inline-block;
   text-transform: uppercase;
 }
-
+.hover--link span {
+  color: #f1f1f1;
+}
 .s1 span {
   transform-origin: bottom;
 }
@@ -173,10 +177,12 @@ ol {
   left: 0;
 }
 
-.menu:hover .s1 span {
+.menu:hover .s1 span,
+.hover--link:hover .s1 span {
   transform: translateY(-100%) rotateX(-90deg);
 }
-.menu:hover .s2 span {
+.menu:hover .s2 span,
+.hover--link:hover .s2 span {
   transform: translateY(0%) rotateX(0deg);
 }
 
@@ -652,23 +658,65 @@ section.footer-container {
 .row {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   height: 100%;
-  width: 90vw;
+  width: 100%;
+  align-content: flex-start;
 }
-.footer-row {
-  height: 100%;
-  width: 33.3%;
+.row div {
+  width: 50%;
+  padding: 50px;
+}
+.column {
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+footer .center {
+  text-align: left;
+  width: 100%;
+  font-size: 35px;
+  font-family: "Ivy Mode";
+  font-weight: 300;
+  padding: 0px 50px;
+  color: #f1f1f1;
+}
+footer h2 {
+  font-family: "Ivy Mode";
+  font-weight: 400;
+  font-size: 20px;
+}
+footer p {
+  opacity: 0.8;
+}
+footer a {
+  color: #f8f8f8;
+
+  border-bottom: 1px solid #f8f8f8;
+}
+/* 
+.footer nav ul,
+.footer nav li {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.footer nav ul {
+  display: flex;
+  flex-direction: row;
 }
 
-.footer-row.center {
-  background-color: #262626;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+.footer nav li {
+  padding-right: 30px;
 }
+
+.footer-nav-container {
+  margin-top: 40px;
+  border-top: 1px solid #fcfcfc;
+
+  padding: 50px;
+} */
