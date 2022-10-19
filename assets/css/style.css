@@ -654,6 +654,7 @@ section.footer-container {
   justify-content: space-between;
   bottom: 0;
   margin: 0;
+  padding: 50px 80px;
 }
 .row {
   display: flex;
@@ -662,11 +663,21 @@ section.footer-container {
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  margin-top: 45px;
+  border-top: 1px solid #555555;
+  border-bottom: 1px solid #555555;
+
   align-content: flex-start;
 }
 .row div {
   width: 50%;
   padding: 50px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .column {
   padding: 40px;
@@ -676,14 +687,18 @@ section.footer-container {
   align-items: flex-start;
   align-content: flex-start;
 }
-footer .center {
-  text-align: left;
-  width: 100%;
-  font-size: 35px;
-  font-family: "Ivy Mode";
+
+footer p,
+footer h2,
+footer h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer h3 {
+  font-family: var(--bodyFont);
   font-weight: 300;
-  padding: 0px 50px;
-  color: #f1f1f1;
+  font-size: 15px;
 }
 footer h2 {
   font-family: "Ivy Mode";
@@ -697,6 +712,26 @@ footer a {
   color: #f8f8f8;
 
   border-bottom: 1px solid #f8f8f8;
+}
+
+footer .center {
+  text-align: center;
+  width: 100%;
+  font-size: 35px;
+  font-family: "Ivy Mode";
+  font-weight: 300;
+  /* padding: 0px 50px; */
+  color: #f1f1f1;
+}
+
+footer .center h2 {
+  font-size: 45px;
+}
+footer .center h3 {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 8px;
+  text-transform: uppercase;
 }
 /* 
 .footer nav ul,
@@ -720,3 +755,46 @@ footer a {
 
   padding: 50px;
 } */
+
+/* Media query */
+@media screen and (max-width: 824px) {
+  .hero,
+  section,
+  main.s-home {
+    margin: 0px 30px !important;
+  }
+  .h-header {
+    font-size: 35px;
+  }
+  .section-home {
+    margin: 0px;
+    padding: 75px 0px;
+  }
+  footer {
+    min-height: 100vh;
+  }
+  section.footer-container {
+    padding: 0px;
+    min-height: 90vh;
+    height: 100%;
+    margin: 0px !important;
+  }
+  footer .column {
+    padding: 0px;
+    width: 100%;
+  }
+  footer .center {
+    padding: 20px 35px;
+  }
+  footer .center h2 {
+    font-size: 25px;
+  }
+  footer .row {
+    flex-direction: column;
+  }
+  footer .row div {
+    width: 100%;
+    padding: 25px 35px;
+    min-height: 155px !important;
+  }
+}

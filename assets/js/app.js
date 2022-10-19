@@ -75,7 +75,7 @@ ScrollTrigger.scrollerProxy(".container", {
 
 ScrollTrigger.defaults({ scroller: ".container" });
 
-gsap.set("section.footer-container", { yPercent: -80 });
+gsap.set("section.footer-container", { yPercent: -50 });
 
 const uncover = gsap.timeline({ paused: true });
 
@@ -84,7 +84,7 @@ uncover.to("section.footer-container", { yPercent: 0, ease: "none" });
 ScrollTrigger.create({
   trigger: "section.s-developper",
   start: "bottom bottom",
-  end: "+=85%",
+  end: "+=100%",
   animation: uncover,
   scrub: true,
   markers: true,
