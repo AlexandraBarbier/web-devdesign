@@ -82,7 +82,7 @@ const uncover = gsap.timeline({ paused: true });
 uncover.to("section.footer-container", { yPercent: 0, ease: "none" });
 
 ScrollTrigger.create({
-  trigger: "section.s-developper",
+  trigger: "section.s-graphic",
   start: "bottom bottom",
   end: "+=100%",
   animation: uncover,

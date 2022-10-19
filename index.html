@@ -50,18 +50,27 @@
   </head>
   <body cz-shortcut-listen="true">
     <header class="header">
-      <div class="logo txtUp coral">*</div>
-      <div class="menu menu-open" onclick="menuOpen()">
+      <!-- <div class="menu menu-open" onclick="menuOpen()">
         <div class="s-container s1">
           <span>Menu</span>
         </div>
         <div class="s-container s2">
           <span>Menu</span>
         </div>
+      </div> -->
+      <div class="menu">
+        <a href="./work.html">
+          <div class="s-container s1">
+            <span>Work</span>
+          </div>
+          <div class="s-container s2">
+            <span>Work</span>
+          </div></a
+        >
       </div>
     </header>
     <!-- menu -->
-    <div class="menu-container">
+    <!-- <div class="menu-container">
       <div class="menu-close" onclick="menuClose()">
         <ion-icon name="close-outline"></ion-icon>
       </div>
@@ -111,7 +120,7 @@
             <div class="menu-item">
               <div class="menu-item-number">05</div>
               <div class="menu-item-name">
-                <a href="./index.html#footer">Home</a>
+                <a href="./index.html">Home</a>
               </div>
               <div class="menu-item-icon">
                 <ion-icon name="arrow-up-outline"></ion-icon>
@@ -120,7 +129,7 @@
           </span>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- main -->
     <div class="container" data-scroll-container>
       <section class="hero" data-scroll-section data-scroll-speed="2">
@@ -337,7 +346,7 @@
         </section>
         <section
           data-scroll-section
-          class="section-home s-developper"
+          class="section-home s-graphic last-section"
           data-scroll-speed="2"
         >
           <div
@@ -368,7 +377,7 @@
                 data-scroll-repeat="true"
                 data-scroll-offset="100"
               />
-              <div data-scroll class="info--services">
+              <div id="footer" data-scroll class="info--services">
                 <div>
                   <p
                     class="hide--mobile"
@@ -429,7 +438,7 @@
           </div>
         </section>
       </main>
-      <footer data-scroll-section class="footer" id="footer">
+      <footer data-scroll-section class="footer">
         <section class="footer-container">
           <div class="column">
             <div class="center">
@@ -492,19 +501,6 @@
 
                 <!-- Calendly link widget end -->
               </div>
-            </div>
-
-            <div class="row footer-nav-container">
-              <nav class="footer-nav">
-                <div class="hover--link">
-                  <div class="s-container s1">
-                    <span>Home</span>
-                  </div>
-                  <div class="s-container s2">
-                    <span>Home</span>
-                  </div>
-                </div>
-              </nav>
             </div>
           </div>
 
