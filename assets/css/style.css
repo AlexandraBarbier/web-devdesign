@@ -276,7 +276,7 @@ ol {
   display: flex;
 }
 
-.s-home .hero,
+.hero,
 .s-home section {
   display: grid;
   place-items: center;
@@ -773,7 +773,7 @@ footer .center h3 {
     position: fixed;
     z-index: 10;
   }
-  .s-home .hero,
+  .hero,
   .s-home section,
   main.s-home {
     margin: 0px 20px !important;
