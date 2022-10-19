@@ -133,6 +133,7 @@ ol {
   top: 0px;
   left: 0px;
   height: 75px;
+  background-color: #f1f1f1;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -1098,8 +1099,4 @@ h1 {
 
 .s-work .menu {
   margin: 0px !important;
-}
-
-.coral span {
-  color: var(--touchColor);
 }
