@@ -153,7 +153,7 @@ ol {
 }
 .menu span,
 .hover--link span {
-  color: var(--black);
+  color: var(--touchColor);
   font-size: 15px;
   transition: 0.5s;
   font-weight: 400;
@@ -1099,8 +1099,4 @@ h1 {
 
 .s-work .menu {
   margin: 0px !important;
-  background-color: #f8f8f8;
-}
-.menu {
-  background-color: #f8f8f8;
 }
