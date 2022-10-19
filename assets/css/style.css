@@ -107,9 +107,6 @@ a {
     sans-serif;
 }
 
-.coral {
-  color: var(--touchColor);
-}
 .grey {
   color: var(--grey);
 }
@@ -138,7 +135,7 @@ ol {
   height: 75px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   align-content: flex-end;
   width: 100vw;
@@ -153,7 +150,7 @@ ol {
 }
 .menu span,
 .hover--link span {
-  color: var(--touchColor);
+  color: var(--black);
   font-size: 15px;
   transition: 0.5s;
   font-weight: 400;
@@ -703,11 +700,13 @@ footer .center h3 {
   text-transform: uppercase;
 }
 
-/* Media query */
+.coral {
+  color: var(--touchColor);
+} /* Media query */
 @media screen and (max-width: 824px) {
   .header {
     height: 55px;
-    padding: 10px 20px;
+    padding: 10px 45px;
     position: fixed;
     z-index: 10;
   }
@@ -1099,4 +1098,8 @@ h1 {
 
 .s-work .menu {
   margin: 0px !important;
+}
+
+.coral span {
+  color: var(--touchColor);
 }
