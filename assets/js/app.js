@@ -87,7 +87,7 @@ ScrollTrigger.create({
   end: "+=100%",
   animation: uncover,
   scrub: true,
-  markers: true,
+  markers: false,
 });
 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
