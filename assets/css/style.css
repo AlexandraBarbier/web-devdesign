@@ -128,7 +128,9 @@ ol {
   font-weight: 300;
 }
 /* header */
-
+body::-webkit-scrollbar {
+  display: none;
+}
 .header {
   top: 0px;
   left: 0px;
