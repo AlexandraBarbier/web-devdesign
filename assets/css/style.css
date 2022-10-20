@@ -1103,3 +1103,12 @@ h1 {
 .s-work .menu {
   margin: 0px !important;
 }
+
+html.has-scroll-smooth {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
