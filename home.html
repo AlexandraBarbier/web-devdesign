@@ -5,12 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="./assets/css/home.css" />
   </head>
   <body>
     <header>
-      <div class="logo">ALBA</div>
-      <div class="menu">Menu</div>
+      <nav>
+        <div class="menu">
+          <a href="#services">
+            <div class="s-container s1">
+              <span>Services</span>
+            </div>
+            <div class="s-container s2">
+              <span>Services</span>
+            </div></a
+          >
+        </div>
+        <div class="menu">
+          <a href="#projets">
+            <div class="s-container s1">
+              <span>Projets</span>
+            </div>
+            <div class="s-container s2">
+              <span>Projets</span>
+            </div></a
+          >
+        </div>
+        <div class="menu">
+          <a href="./work.html">
+            <div class="s-container s1">
+              <span>Tarifs</span>
+            </div>
+            <div class="s-container s2">
+              <span>Tarifs</span>
+            </div></a
+          >
+        </div>
+        <div class="menu">
+          <a href="#contact">
+            <div class="s-container s1">
+              <span>Contact</span>
+            </div>
+            <div class="s-container s2">
+              <span>Contact</span>
+            </div></a
+          >
+        </div>
+      </nav>
     </header>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -33,39 +79,51 @@
     </svg>
     <div class="stamp">
       <div class="circle">
-        <p id="circle-content">EXPERIMENTS . EXPERIMENTS .</p>
+        <p id="circle-content">WEBMASTERING . DÉVELOPPEMENT . DESIGN .</p>
       </div>
-      <p>2022</p>
+      <p>A.L.B.A</p>
     </div>
 
     <div id="cursor" class="Cursor"></div>
     <section id="hero-s">
+      <p id="hello"><span>Hello</span> world</p>
+      <span class="absolute letter1">A</span>
+      <span class="absolute letter2">L</span>
+      <span class="absolute letter3">B</span>
+      <span class="absolute letter4">A</span>
+
       <div class="hero-text-container">
-        <img
-          src="./assets/medias/images/alba-star.svg"
-          alt=""
-          width="28"
-          height="28"
-          class="star"
-        />
-        <div class="bg"></div>
+        <div class="time"><p>18:00</p></div>
         <h1>
-          <span class="small">Alexandra Barbier</span><br />
-          <span class="big">web &/ design</span>
+          J'aide les entreprises à développer leur commerce életronique et leur
+          visibilité à travers des solutions web<span class="coral">*</span>
         </h1>
-        <div class="hero-sub">
-          <p>
-            J'aide les entreprises à développer leur commerce életronique et
-            leur visibilité à travers des solutions web<span class="coral"
-              >*</span
-            >
-          </p>
+        <div class="copy"><p>© 2022</p></div>
+        <ion-icon name="add-outline"></ion-icon>
+      </div>
+      <div class="hero-sub-container">
+        <div class="hero-img hero-img1">
+          <h2>Webmastering</h2>
+          <img src="./assets/medias/images/b17061127530571.6255e55acace7.jpg" />
+        </div>
+        <div class="hero-img hero-img2">
+          <h2>Développement</h2>
+
+          <img
+            src="./assets/medias/images/realisation-site-portfolio-ecommerce.jpg"
+            alt=""
+          />
+        </div>
+        <div class="hero-img hero-img3">
+          <h2>Design</h2>
+
+          <img src="./assets/medias/images/motif6.jpg" alt="" />
         </div>
       </div>
     </section>
     <section class="s-services">
       <div>
-        <h2>/ Webmastering</h2>
+        <h2 id="services">/ Webmastering</h2>
         <h3 class="services-heading">
           J'offre un véritable pilotage technique et graphique de votre site
           marchand.
@@ -137,11 +195,11 @@
         </ol>
       </div>
     </section>
-    <section class="p-section">
+    <section id="projets" class="p-section">
       <h2>/ Projets sélectionnés</h2>
 
       <div class="container">
-        <div class="reveal right">
+        <div class="reveal left">
           <div class="image-wrap">
             <img src="./assets/medias/images/website-3.png" />
           </div>
@@ -204,8 +262,8 @@
           </div>
         </div>
       </div>
-      <div class="container c-1">
-        <div class="reveal right">
+      <div class="container">
+        <div class="reveal left">
           <div class="image-wrap">
             <img src="./assets/medias/images/website-1.png" />
           </div>
@@ -265,10 +323,10 @@
           </div>
         </div>
       </div>
-      <div class="container c-1">
-        <div class="reveal right">
+      <div class="container">
+        <div class="reveal left">
           <div class="image-wrap">
-            <img src="./assets/medias/images/motif6.jpg" />
+            <img id="packaging" src="./assets/medias/images/motif6.jpg" />
           </div>
           <div class="infos-container fadeup">
             <div class="line"></div>
@@ -307,7 +365,7 @@
         </div>
       </div>
     </section>
-    <section class="s-tarifs">
+    <section id="tarifs" class="s-tarifs">
       <div class="tarifs-container">
         <h2>/ Tarifs</h2>
         <div>
@@ -367,63 +425,71 @@
         </div>
       </div>
     </section>
+
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const options = {
-          root: null,
-          rootMargin: "0px",
-          threshold: 0.4,
-        };
+      // CONTACT LINK HOVER EFFECT
+      const spanContainers = document.querySelectorAll(
+        ".menu div, .hover--link div"
+      );
+      spanContainers.forEach((item) => {
+        const letters = item.children[0].textContent.split("");
+        item.innerHTML = "";
 
-        // IMAGE ANIMATION
-
-        let revealCallback = (entries) => {
-          entries.forEach((entry) => {
-            let container = entry.target;
-
-            if (entry.isIntersecting) {
-              console.log(container);
-              container.classList.add("animating");
-              return;
-            }
-
-            if (entry.boundingClientRect.top > 0) {
-              container.classList.remove("animating");
-            }
-          });
-        };
-
-        let revealObserver = new IntersectionObserver(revealCallback, options);
-
-        document.querySelectorAll(".reveal").forEach((reveal) => {
-          revealObserver.observe(reveal);
+        letters.forEach((el, index) => {
+          item.innerHTML += `<span style="transition-delay:${
+            0.07 * index
+          }s">${el}</span>`;
         });
+      });
 
-        // TEXT ANIMATION
+      // IMAGE ANIMATION
 
-        let fadeupCallback = (entries) => {
-          entries.forEach((entry) => {
-            let container = entry.target;
-            container.classList.add("not-fading-up");
+      // let revealCallback = (entries) => {
+      //   entries.forEach((entry) => {
+      //     let container = entry.target;
 
-            if (entry.isIntersecting) {
-              container.classList.add("fading-up");
-              return;
-            }
+      //     if (entry.isIntersecting) {
+      //       console.log(container);
+      //       container.classList.add("animating");
+      //       return;
+      //     }
 
-            if (entry.boundingClientRect.top > 0) {
-              container.classList.remove("fading-up");
-            }
-          });
-        };
+      //     if (entry.boundingClientRect.top > 0) {
+      //       container.classList.remove("animating");
+      //     }
+      //   });
+      // };
 
-        let fadeupObserver = new IntersectionObserver(fadeupCallback, options);
+      // let revealObserver = new IntersectionObserver(revealCallback, options);
 
-        document.querySelectorAll(".fadeup").forEach((fadeup) => {
-          fadeupObserver.observe(fadeup);
+      // document.querySelectorAll(".reveal").forEach((reveal) => {
+      //   revealObserver.observe(reveal);
+      // });
+
+      // TEXT ANIMATION
+
+      let fadeupCallback = (entries) => {
+        entries.forEach((entry) => {
+          let container = entry.target;
+          container.classList.add("not-fading-up");
+
+          if (entry.isIntersecting) {
+            container.classList.add("fading-up");
+            return;
+          }
+
+          if (entry.boundingClientRect.top > 0) {
+            container.classList.remove("fading-up");
+          }
         });
+      };
+
+      let fadeupObserver = new IntersectionObserver(fadeupCallback, options);
+
+      document.querySelectorAll(".fadeup").forEach((fadeup) => {
+        fadeupObserver.observe(fadeup);
       });
 
       const cursor = document.getElementById("cursor");
@@ -501,8 +567,8 @@
       }
 
       /*function limit(value, min, max) {
-    return Math.min(Math.max(min, value), max);
-}*/
+          return Math.min(Math.max(min, value), max);
+      }*/
 
       function startIdleTimer() {
         timeoutID = setTimeout(goInactive, idleTimeout);
