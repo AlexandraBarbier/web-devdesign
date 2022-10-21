@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Alexandra Barbier</title>
 
     <script
       nomodule
@@ -86,7 +86,8 @@
 
     <div id="cursor" class="Cursor"></div>
     <section id="hero-s">
-      <p id="hello"><span>Hello</span> world</p>
+      <p id="hello"><span>Web &/</span> design</p>
+
       <span class="absolute letter1">A</span>
       <span class="absolute letter2">L</span>
       <span class="absolute letter3">B</span>
@@ -425,7 +426,53 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <section class="footer-container">
+        <div class="column">
+          <div class="center">
+            <h2 class="opacity" data-scroll>Vous avez un projet en tête ?</h2>
+            <h3 class="opacity" data-scroll>
+              Vous recherchez LA prestataire qui saura le réaliser ?
+            </h3>
+          </div>
 
+          <div class="row">
+            <div>
+              <h2>Contactez-moi</h2>
+              <p>
+                Directement par e-mail pour une prise de contact ou demande de
+                deivs
+              </p>
+              <a href="mailto:alba.developper@gmail.com">Envoyer un e-mail</a>
+            </div>
+            <div>
+              <h2>Prenons rendez-vous</h2>
+              <p>
+                Bookez dès maintenant un rendez-vous téléphonique (sans
+                engagement)
+              </p>
+              <!-- Calendly link widget begin -->
+              <link
+                href="https://assets.calendly.com/assets/external/widget.css"
+                rel="stylesheet"
+              />
+              <script
+                src="https://assets.calendly.com/assets/external/widget.js"
+                type="text/javascript"
+                async
+              ></script>
+              <a
+                href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/web_dev_design/30min?hide_event_type_details=1&background_color=#f1f1f1&text_color=111&primary_color=grey'});return false;"
+                >Prendre un rendez-vous</a
+              >
+
+              <!-- Calendly link widget end -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 
     <script>
@@ -444,52 +491,60 @@
         });
       });
 
-      // IMAGE ANIMATION
+      document.addEventListener("DOMContentLoaded", function () {
+        const options = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.4,
+        };
 
-      // let revealCallback = (entries) => {
-      //   entries.forEach((entry) => {
-      //     let container = entry.target;
+        // IMAGE ANIMATION
 
-      //     if (entry.isIntersecting) {
-      //       console.log(container);
-      //       container.classList.add("animating");
-      //       return;
-      //     }
+        let revealCallback = (entries) => {
+          entries.forEach((entry) => {
+            let container = entry.target;
 
-      //     if (entry.boundingClientRect.top > 0) {
-      //       container.classList.remove("animating");
-      //     }
-      //   });
-      // };
+            if (entry.isIntersecting) {
+              console.log(container);
+              container.classList.add("animating");
+              return;
+            }
 
-      // let revealObserver = new IntersectionObserver(revealCallback, options);
+            if (entry.boundingClientRect.top > 0) {
+              container.classList.remove("animating");
+            }
+          });
+        };
 
-      // document.querySelectorAll(".reveal").forEach((reveal) => {
-      //   revealObserver.observe(reveal);
-      // });
+        let revealObserver = new IntersectionObserver(revealCallback, options);
 
-      // TEXT ANIMATION
-
-      let fadeupCallback = (entries) => {
-        entries.forEach((entry) => {
-          let container = entry.target;
-          container.classList.add("not-fading-up");
-
-          if (entry.isIntersecting) {
-            container.classList.add("fading-up");
-            return;
-          }
-
-          if (entry.boundingClientRect.top > 0) {
-            container.classList.remove("fading-up");
-          }
+        document.querySelectorAll(".reveal").forEach((reveal) => {
+          revealObserver.observe(reveal);
         });
-      };
 
-      let fadeupObserver = new IntersectionObserver(fadeupCallback, options);
+        // TEXT ANIMATION
 
-      document.querySelectorAll(".fadeup").forEach((fadeup) => {
-        fadeupObserver.observe(fadeup);
+        let fadeupCallback = (entries) => {
+          entries.forEach((entry) => {
+            let container = entry.target;
+            container.classList.add("not-fading-up");
+
+            if (entry.isIntersecting) {
+              container.classList.add("fading-up");
+              return;
+            }
+
+            if (entry.boundingClientRect.top > 0) {
+              container.classList.remove("fading-up");
+            }
+          });
+        };
+
+        let fadeupObserver = new IntersectionObserver(fadeupCallback, options);
+
+        document.querySelectorAll(".fadeup").forEach((fadeup) => {
+          fadeupObserver.observe(fadeup);
+        });
       });
 
       const cursor = document.getElementById("cursor");

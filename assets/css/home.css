@@ -106,10 +106,113 @@ header nav {
   transform: translateY(0%) rotateX(0deg);
 }
 
+/*footer*/
+
+footer {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* position: fixed !important; */
+  bottom: 0;
+}
+
+section.footer-container {
+  height: 90vh;
+  width: 100vw;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+  margin: 0;
+  padding: 50px 80px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin-top: 45px;
+  border-top: 1px solid #555555;
+  border-bottom: 1px solid #555555;
+
+  align-content: flex-start;
+}
+.row div {
+  width: 50%;
+  padding: 50px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.column {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+footer p,
+footer h2,
+footer h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer h3 {
+  font-family: var(--bodyFont);
+  font-weight: 300;
+  font-size: 15px;
+}
+footer h2 {
+  font-family: "Ivy Mode";
+  font-weight: 400;
+  font-size: 20px;
+}
+footer p {
+  opacity: 0.8;
+}
+footer a {
+  color: #f8f8f8;
+
+  border-bottom: 1px solid #f8f8f8;
+}
+
+footer .center {
+  text-align: center;
+  width: 100%;
+  font-size: 35px;
+  font-family: "Ivy Mode";
+  font-weight: 300;
+  /* padding: 0px 50px; */
+  color: #f1f1f1;
+}
+
+footer .center h2 {
+  font-size: 45px;
+}
+footer .center h3 {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 8px;
+  font-family: founders;
+  text-transform: uppercase;
+}
+
 /*----*/
 #hero-s {
-  min-height: 70vh;
-  padding: 20vw 10vw;
+  min-height: 100vh;
+  padding: 0vw 10vw;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -192,18 +295,23 @@ hr {
 .hero-text-container p {
   text-transform: uppercase;
   font-size: 12px;
-  display: inline-flex;
+  display: flex;
   z-index: 2;
+  width: 45px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .absolute {
   position: absolute;
   font-size: 230px;
-  color: #fff;
-  opacity: 1;
-  /* z-index: 1; */
+  color: #e5e4e4;
+  opacity: 0.5;
+  z-index: 6;
 }
 .letter1 {
   top: -10%;
+  left: 0px;
 }
 .letter2 {
   right: -5%;
@@ -211,16 +319,18 @@ hr {
 }
 .letter3 {
   left: -5%;
-  top: 40%;
+  bottom: -10%;
 }
 .letter4 {
   right: 2%;
-  bottom: 15%;
+  bottom: -17%;
 }
 .hero-text-container h1 {
   margin: 0;
   padding: 0;
   font-size: 20px;
+  margin: 5vw 8vw;
+  font-weight: 400;
 }
 
 @media (max-width: 1400px) {
@@ -378,9 +488,9 @@ body:not(.no-js) .fading-up {
   .hero-text-container h1 {
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 15px;
     text-align: center;
-    margin: 5vw;
+    margin: 5vw 2vw;
     font-weight: 400;
   }
   html,
@@ -392,10 +502,66 @@ body:not(.no-js) .fading-up {
     padding: 0px;
   }
   .services-heading {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  header {
+    padding: 12px 30px;
+    background: #f8f8f8;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   header nav {
     width: 100%;
+  }
+  footer {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  footer .row {
+    margin-top: 8px;
+  }
+  section.footer-container {
+    padding: 0px;
+    min-height: 90vh;
+    height: 100%;
+    margin: 0px !important;
+    justify-content: center;
+  }
+  footer .column {
+    padding: 0px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .center {
+    padding: 20px 35px;
+    text-align: left;
+  }
+  footer .center h2 {
+    font-size: 22px;
+  }
+  footer .row {
+    flex-direction: column;
+  }
+  footer .row div {
+    width: 100%;
+    padding: 25px 35px;
+    height: 180px !important;
+  }
+  #hello,
+  #hello span {
+    font-size: 2.1rem;
+    margin-bottom: 8vw;
+  }
+  .hero-img img {
+    height: 130px;
+  }
+  .hero-img {
+    height: 154px;
   }
 }
 
