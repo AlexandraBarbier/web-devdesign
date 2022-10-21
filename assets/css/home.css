@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Founders";
+  src: url("../fonts/FoundersGrotesk-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Founders";
+  src: url("../fonts/FoundersGrotesk-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Founders condensed";
+  src: url("../fonts/FoundersGroteskCond-Lt.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ivy Mode";
+  src: local("Ivy Mode Regular"), local("IvyMode-Regular"),
+    url("../fonts/IvyMode-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #e0dad5;
+}
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "founders", "source sans pro", "inter", sans-serif;
+}
+:root {
+  --touchFont: "Ivy Mode", "hatton", "open sans";
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+header {
+  border-bottom: 1px solid #111;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 60px;
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 100%; */
+  z-index: 100;
+}
+
+/*----*/
+#hero-s {
+  height: 70vh;
+}
+li {
+  list-style: decimal-leading-zero;
+}
+ol {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 22px;
+  line-height: 27px;
+}
+
+hr {
+  width: 100%;
+  height: 1px !important;
+  margin: 100px 0;
+  border-width: 0.1px;
+}
+.services-heading {
+  font-size: 40px;
+  font-family: var(--touchFont);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  transition: opacity 5s;
+  margin: 35px 0;
+}
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  height: 65vh;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.hero-text-container h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.hero-text-container .small {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.big {
+  letter-spacing: -2px;
+  font-size: 65px;
+}
+img.star {
+  width: 28px;
+  height: auto;
+}
+
+@media (max-width: 1400px) {
+  .hero-sub {
+    line-height: 19px;
+    width: 70%;
+  }
+}
+
+/*---*/
+
+.s-services,
+.p-section,
+.s-tarifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 15vw;
+}
+
+.p-section {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.hero-sub {
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  width: 45%;
+}
+
+.hero-bottom {
+  width: 100vw;
+  height: 100%;
+  background-color: #555555;
+  background-image: url("../medias/images/motif6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*---*/
+.left,
+.right {
+  width: 50%;
+}
+.left {
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container {
+  /* padding: 0px 90px; */
+  display: flex;
+  /* place-items: center; */
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+body:not(.no-js) .image-wrap {
+  transition: 1s ease-out;
+  transition-delay: 0.2s;
+  position: relative;
+  width: auto;
+  /* height: 80vh; */
+  overflow: hidden;
+  /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); */
+  visibility: hidden;
+}
+
+body:not(.no-js) .image-wrap img {
+  transform: scale(1.3);
+  transition: 2s ease-out;
+}
+
+body:not(.no-js) .animating .image-wrap {
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+  visibility: visible;
+  transform: skewY(0);
+}
+
+body:not(.no-js) .animating img {
+  transform: scale(1);
+  transition: 4s ease-out;
+}
+
+body:not(.no-js) .fadeup {
+  opacity: 0;
+  transition: 0.4s ease-out;
+  transform: translateY(40px);
+}
+
+body:not(.no-js) .fading-up {
+  opacity: 1;
+  transition: 1s ease-out;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}
+
+@media screen and (max-width: 824px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 40px 25px;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+  }
+  .container img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .container .right {
+    overflow: visible;
+  }
+  .left,
+  .right {
+    width: 100%;
+    height: 100%;
+  }
+  html,
+  body {
+    overflow-x: visible;
+    box-sizing: border-box;
+    margin: 0px !important;
+    width: 100vw;
+    padding: 0px;
+  }
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #111;
+  margin: 0;
+}
+
+.infos-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+.infos-container {
+  margin-top: 0.8vw;
+}
+.reveal {
+  margin: 30px;
+  height: 100%;
+}
+
+.paragraph {
+  font-size: 14px;
+  margin-top: 30px;
+}
+.infos-container h2,
+.infos-container h4,
+.infos-container p,
+.infos-container a,
+.s-services h2,
+.p-section h2,
+.s-tarifs h2,
+.s-tarifs h4 {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0.8vw;
+}
+
+.s-tarifs h3 {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.s-tarifs p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.infos-container h3 {
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 1.8vw;
+  /* margin-top: 20px; */
+}
+
+.tarifs-container,
+.row {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: flex-start;
+}
+
+.tarifs-container {
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-between;
+}
+
+.tarifs-container .row div {
+  width: 30%;
+}
+
+.s-services,
+.s-tarifs {
+  background: #121212;
+  color: #e1e1e1;
+}
+
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* cursor */
+
+#svg-filtro-cursore {
+  display: none;
+}
+
+.Cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  transform-origin: center center;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  filter: url("#goo");
+}
+.Cursor span {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #fff;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+html {
+  cursor: none;
+}
+
+.s-services p,
+.s-services p strong {
+  font-size: 18px !important;
+  font-weight: 300;
+  line-height: 29px;
+}

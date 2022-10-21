@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">ALBA</div>
+      <div class="menu">Menu</div>
+    </header>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="800"
+      id="svg-filtro-cursore"
+    >
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="stamp">
+      <div class="circle">
+        <p id="circle-content">EXPERIMENTS . EXPERIMENTS .</p>
+      </div>
+      <p>2022</p>
+    </div>
+
+    <div id="cursor" class="Cursor"></div>
+    <section id="hero-s">
+      <div class="hero-text-container">
+        <img
+          src="./assets/medias/images/alba-star.svg"
+          alt=""
+          width="28"
+          height="28"
+          class="star"
+        />
+        <div class="bg"></div>
+        <h1>
+          <span class="small">Alexandra Barbier</span><br />
+          <span class="big">web &/ design</span>
+        </h1>
+        <div class="hero-sub">
+          <p>
+            J'aide les entreprises à développer leur commerce életronique et
+            leur visibilité à travers des solutions web<span class="coral"
+              >*</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="s-services">
+      <div>
+        <h2>/ Webmastering</h2>
+        <h3 class="services-heading">
+          J'offre un véritable pilotage technique et graphique de votre site
+          marchand.
+        </h3>
+        <p>
+          Ma mission est de
+          <strong
+            >maintenir votre commerce électronique actif, vivant et
+            fonctionnel</strong
+          >
+          tout en améliorant constament
+          <strong>l'expérience utilisateur.</strong> Votre site web évolue au
+          fur et à mesure que votre entreprise se développe.
+        </p>
+
+        <p>
+          Par la modification et/ou
+          <strong>l'intégration de contenu</strong> (produits, médias, textes,
+          articles, landing page, page...) régulière, La mise en place de
+          fonctionnalités plus ou moins spécifiques, L'analyses de statistiques
+          et de performance,
+          <strong>l'optimisation du référencement naturel</strong> (SEO*),
+          l'optimisation de la base de donnée ou encore
+          <strong>la résolution des bugs d'affichages en urgence.</strong>
+        </p>
+      </div>
+      <hr />
+      <div>
+        <h2>/ Développement web</h2>
+        <h3 class="services-heading">
+          Je créer des sites web en alliant technique et créativité dans le but
+          de concrétiser votre projet.
+        </h3>
+        <ol>
+          <li>
+            Développement de site vitrine pour particulier, petites ou grandes
+            entreprises
+          </li>
+          <li>
+            Développement de site one page pour particuliers, petites ou grandes
+            entreprises.
+          </li>
+          <li>Développement de site web e-commerce,</li>
+          <li>Refonte partielle ou totale de site web</li>
+          <li>
+            Développement d'une partie (page, section, fonctionnalité)
+            spécifique d'un site web existant
+          </li>
+        </ol>
+      </div>
+      <hr />
+      <div>
+        <h2>/ Conception graphique</h2>
+        <h3 class="services-heading">
+          J'exprime vos idées, vos valeurs, votre ADN en utilisant des outils de
+          design graphique.
+        </h3>
+        <ol>
+          <li>Conception de maquette de site web</li>
+          <li>Conception ou refont de logotype</li>
+          <li>
+            Conception d'élements pour votre site web (bannière, icons, images)
+          </li>
+          <li>Réalisation de packaging produits</li>
+          <li>
+            Réalisation courtes de motion design (animation de logo, animation
+            d'icons, animation de SVG, animation de textes).
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="p-section">
+      <h2>/ Projets sélectionnés</h2>
+
+      <div class="container">
+        <div class="reveal right">
+          <div class="image-wrap">
+            <img src="./assets/medias/images/website-3.png" />
+          </div>
+          <div class="infos-container fadeup">
+            <div class="line"></div>
+            <div>
+              <h2 class="b-subheader">
+                developpement -design - portfolio - e-commerce
+              </h2>
+              <p>00-1</p>
+            </div>
+            <div>
+              <h3>Linstable</h3>
+            </div>
+            <div>
+              <h4>Jean-Michel Landon, photographe</h4>
+
+              <a href="www.labeuhtique.com">Visiter</a>
+            </div>
+
+            <!-- <div class="paragraph">
+            <p>
+              Développement du e-commerce de CBD, webmastering et stratégie.
+              Depuis 2020, La Beuhtique est fière de participer à la
+              démocratisation du cannabidiol. J'aide l'entreprise à développer
+              sa stratégie web.
+            </p>
+          </div> -->
+          </div>
+        </div>
+        <div class="reveal right">
+          <div class="image-wrap">
+            <img src="./assets/medias/images/webste-2.png" />
+          </div>
+          <div class="infos-container fadeup">
+            <div class="line"></div>
+            <div>
+              <h2 class="b-subheader">
+                developpement -design - webmastering - e-commerce
+              </h2>
+              <p>00-2</p>
+            </div>
+            <div>
+              <h3>La Beuhtique</h3>
+            </div>
+            <div>
+              <h4>Boutique française de CBD</h4>
+
+              <a href="www.labeuhtique.com">Visiter</a>
+            </div>
+
+            <!-- <div class="paragraph">
+            <p>
+              Développement du e-commerce de CBD, webmastering et stratégie.
+              Depuis 2020, La Beuhtique est fière de participer à la
+              démocratisation du cannabidiol. J'aide l'entreprise à développer
+              sa stratégie web.
+            </p>
+          </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="container c-1">
+        <div class="reveal right">
+          <div class="image-wrap">
+            <img src="./assets/medias/images/website-1.png" />
+          </div>
+          <div class="infos-container fadeup">
+            <div class="line"></div>
+            <div>
+              <h2 class="b-subheader">developpement -design - vitrine</h2>
+              <p>00-3</p>
+            </div>
+            <div>
+              <h3>Meta versity</h3>
+            </div>
+            <div>
+              <h4>Organisme de formation technologies et web 3</h4>
+              <a href="www.meta-versity.fr">Visiter</a>
+            </div>
+
+            <!-- <div class="paragraph">
+              <p>
+                Développement du e-commerce de CBD, webmastering et stratégie.
+                Depuis 2020, La Beuhtique est fière de participer à la
+                démocratisation du cannabidiol. J'aide l'entreprise à développer
+                sa stratégie web.
+              </p>
+            </div> -->
+          </div>
+        </div>
+        <div class="reveal right">
+          <div class="image-wrap">
+            <img src="./assets/medias/images/website-4.png" />
+          </div>
+          <div class="infos-container fadeup">
+            <div class="line"></div>
+            <div>
+              <h2 class="b-subheader">
+                developpement - design - webmastering - e-commerce
+              </h2>
+              <p>00-4</p>
+            </div>
+            <div>
+              <h3>Cockin(e)s</h3>
+            </div>
+            <div>
+              <h4>Lingerie et lovestore</h4>
+
+              <a href="www.labeuhtique.com">Visiter</a>
+            </div>
+
+            <!-- <div class="paragraph">
+              <p>
+                Développement du e-commerce de CBD, webmastering et stratégie.
+                Depuis 2020, La Beuhtique est fière de participer à la
+                démocratisation du cannabidiol. J'aide l'entreprise à développer
+                sa stratégie web.
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="container c-1">
+        <div class="reveal right">
+          <div class="image-wrap">
+            <img src="./assets/medias/images/motif6.jpg" />
+          </div>
+          <div class="infos-container fadeup">
+            <div class="line"></div>
+            <div>
+              <h2 class="b-subheader">packaging - design</h2>
+              <p>00-5</p>
+            </div>
+            <div>
+              <h3>La Beuhtique</h3>
+            </div>
+            <div>
+              <h4>Sachets déstinés à la vente chez les buralistes</h4>
+              <a href="www.labeuhtique.com">Visiter</a>
+            </div>
+          </div>
+        </div>
+        <div class="reveal right">
+          <div class="image-wrap">
+            <img src="./assets/medias/images/instagram-the-purpose-v4.jpg" />
+          </div>
+          <div class="infos-container fadeup">
+            <div class="line"></div>
+            <div>
+              <h2 class="b-subheader">concept - design - identité visuelle</h2>
+              <p>00-6</p>
+            </div>
+            <div>
+              <h3>The Purpose</h3>
+            </div>
+            <div>
+              <h4>Organisme évenementiel de musique techno</h4>
+
+              <a href="www.labeuhtique.com">Visiter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-tarifs">
+      <div class="tarifs-container">
+        <h2>/ Tarifs</h2>
+        <div>
+          <h3>Webmastring : à partir de 450€/mois - 32€/heure - 150€/jour</h3>
+          <h3>
+            Développement : site vitrine à partir de 650€ - site marchand à
+            partir de 3200€ - Refonte e-commerce à partir de 1200€
+          </h3>
+          <h3>
+            Design : Logotype 300€ - Maquette web à partir de 1200€ - packaging
+            produits à partir de 550€ - éléments pour le web à partir de 150€
+          </h3>
+
+          <!-- <div class="row">
+          <div class="first">
+            <h3>Webmastring</h3>
+            <p>À partir de 450/mois</p>
+            <p>32€/heure</p>
+            <p>150€/jour</p>
+          </div>
+          <div class="seconde">
+            <h3>Développement web</h3>
+            <h4>Site one page :</h4>
+            <p>à partir de 450€</p>
+            <h4>Site vitrine :</h4>
+            <p>à partir de 650€</p>
+            <h4>Développement e-commerce :</h4>
+            <p>à partir de 3200€</p>
+            <h4>Refonte de site e-commerce :</h4>
+            <p>à partir de 1800€</p>
+          </div>
+          <div class="third">
+            <h3>Conception graphique</h3>
+            <h4>Maquette/prototype web</h4>
+            <p>À partir de 1200€</p>
+            <h4>Logotype :</h4>
+            <p>320€</p>
+            <h4>Packaging produits :</h4>
+            <p>À partir de 550€</p>
+            <h4>Création graphiques pour le web :</h4>
+            <p>À partir de 170€</p>
+          </div>
+        </div> -->
+
+          <p>
+            <i
+              >Tarifs à titres indicatifs, chaque projet est unique et demande
+              d'être étudié. Décrivez-moi le votre, je m'engage à vous envoyez
+              un devis, sur demande, sous 48h maximum.</i
+            >
+          </p>
+
+          <p>
+            Si vous avez un besoin spécifique qui ne se trouve pas dans la
+            grille de tarifs, envoyez-moi un e-mail.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const options = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.4,
+        };
+
+        // IMAGE ANIMATION
+
+        let revealCallback = (entries) => {
+          entries.forEach((entry) => {
+            let container = entry.target;
+
+            if (entry.isIntersecting) {
+              console.log(container);
+              container.classList.add("animating");
+              return;
+            }
+
+            if (entry.boundingClientRect.top > 0) {
+              container.classList.remove("animating");
+            }
+          });
+        };
+
+        let revealObserver = new IntersectionObserver(revealCallback, options);
+
+        document.querySelectorAll(".reveal").forEach((reveal) => {
+          revealObserver.observe(reveal);
+        });
+
+        // TEXT ANIMATION
+
+        let fadeupCallback = (entries) => {
+          entries.forEach((entry) => {
+            let container = entry.target;
+            container.classList.add("not-fading-up");
+
+            if (entry.isIntersecting) {
+              container.classList.add("fading-up");
+              return;
+            }
+
+            if (entry.boundingClientRect.top > 0) {
+              container.classList.remove("fading-up");
+            }
+          });
+        };
+
+        let fadeupObserver = new IntersectionObserver(fadeupCallback, options);
+
+        document.querySelectorAll(".fadeup").forEach((fadeup) => {
+          fadeupObserver.observe(fadeup);
+        });
+      });
+
+      const cursor = document.getElementById("cursor");
+      const amount = 20;
+      const sineDots = Math.floor(amount * 0.3);
+      const width = 26;
+      const idleTimeout = 150;
+      let lastFrame = 0;
+      let mousePosition = { x: 0, y: 0 };
+      let dots = [];
+      let timeoutID;
+      let idle = false;
+
+      let hoverTL;
+
+      class Dot {
+        constructor(index = 0) {
+          this.index = index;
+          this.anglespeed = 0.05;
+          this.x = 0;
+          this.y = 0;
+          this.scale = 1 - 0.05 * index;
+          this.range = width / 2 - (width / 2) * this.scale + 2;
+          this.limit = width * 0.75 * this.scale;
+          this.element = document.createElement("span");
+          TweenMax.set(this.element, { scale: this.scale });
+          cursor.appendChild(this.element);
+        }
+
+        lock() {
+          this.lockX = this.x;
+          this.lockY = this.y;
+          this.angleX = Math.PI * 2 * Math.random();
+          this.angleY = Math.PI * 2 * Math.random();
+        }
+
+        draw(delta) {
+          if (!idle || this.index <= sineDots) {
+            TweenMax.set(this.element, { x: this.x, y: this.y });
+          } else {
+            this.angleX += this.anglespeed;
+            this.angleY += this.anglespeed;
+            this.y = this.lockY + Math.sin(this.angleY) * this.range;
+            this.x = this.lockX + Math.sin(this.angleX) * this.range;
+            TweenMax.set(this.element, { x: this.x, y: this.y });
+          }
+        }
+      }
+
+      class Circle {
+        constructor(id) {
+          const el = document.getElementById(id);
+          const parent = el.parentElement;
+          parent.removeChild(el);
+          const chars = el.innerText.split("");
+          chars.push(" ");
+          for (let i = 0; i < chars.length; i++) {
+            const span = document.createElement("span");
+            span.innerText = chars[i];
+            span.className = `char${i + 1}`;
+            parent.appendChild(span);
+          }
+        }
+      }
+
+      function init() {
+        window.addEventListener("mousemove", onMouseMove);
+        window.addEventListener("touchmove", onTouchMove);
+
+        // eslint-disable-next-line no-new
+        new Circle("circle-content");
+        lastFrame += new Date();
+        buildDots();
+        render();
+      }
+
+      /*function limit(value, min, max) {
+    return Math.min(Math.max(min, value), max);
+}*/
+
+      function startIdleTimer() {
+        timeoutID = setTimeout(goInactive, idleTimeout);
+        idle = false;
+      }
+
+      function resetIdleTimer() {
+        clearTimeout(timeoutID);
+        startIdleTimer();
+      }
+
+      function goInactive() {
+        idle = true;
+        for (let dot of dots) {
+          dot.lock();
+        }
+      }
+
+      function buildDots() {
+        for (let i = 0; i < amount; i++) {
+          let dot = new Dot(i);
+          dots.push(dot);
+        }
+      }
+
+      const onMouseMove = (event) => {
+        mousePosition.x = event.clientX - width / 2;
+        mousePosition.y = event.clientY - width / 2;
+        resetIdleTimer();
+      };
+
+      const onTouchMove = () => {
+        mousePosition.x = event.touches[0].clientX - width / 2;
+        mousePosition.y = event.touches[0].clientY - width / 2;
+        resetIdleTimer();
+      };
+
+      const render = (timestamp) => {
+        const delta = timestamp - lastFrame;
+        positionCursor(delta);
+        lastFrame = timestamp;
+        requestAnimationFrame(render);
+      };
+
+      const positionCursor = (delta) => {
+        let x = mousePosition.x;
+        let y = mousePosition.y;
+        dots.forEach((dot, index, dots) => {
+          let nextDot = dots[index + 1] || dots[0];
+          dot.x = x;
+          dot.y = y;
+          dot.draw(delta);
+          if (!idle || index <= sineDots) {
+            const dx = (nextDot.x - dot.x) * 0.35;
+            const dy = (nextDot.y - dot.y) * 0.35;
+            x += dx;
+            y += dy;
+          }
+        });
+      };
+
+      init();
+    </script>
+  </body>
+</html>
